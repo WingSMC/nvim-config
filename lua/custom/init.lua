@@ -12,6 +12,8 @@ augroup highlight_yank
     au TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=200 }
 augroup END
 ]])
+vim.cmd('set number')
+vim.cmd('set relativenumber')
 
 vim.keymap.set('s', '<Tab>', 'copilot#Accept("\\<CR>")', {
   expr = true,
