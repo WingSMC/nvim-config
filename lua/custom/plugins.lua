@@ -37,7 +37,9 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
-
+  {
+    "sindrets/diffview.nvim"
+  },
   {
     "stevearc/conform.nvim",
     --  for users those who want auto-save conform + lazyloading!
