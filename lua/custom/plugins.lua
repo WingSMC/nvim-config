@@ -67,8 +67,28 @@ local plugins = {
     'justinmk/vim-sneak',
     lazy = false,
   },
+  --{
+    --'tpope/vim-surround',
+  --},
   {
-    'tpope/vim-surround',
+    "kylechui/nvim-surround",
+    version = "^3.0.0",
+    event = "VeryLazy",
+    config = function()
+        require("nvim-surround").setup({
+        })
+    end
+  },
+  {
+    "max397574/better-escape.nvim",
+    config = function()
+      require("better_escape").setup({
+        mapping = {"jj"},
+        timeout = 1000,
+        clear_empty_lines = false,
+        keys = "<Esc>"
+      })
+    end,
   },
   {
     'glts/vim-radical'

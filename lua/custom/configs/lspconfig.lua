@@ -14,10 +14,11 @@ for _, lsp in ipairs(servers) do
 end
 
 lspconfig.html.setup{}
-lspconfig.tsserver.setup{}
+lspconfig.ts_ls.setup{}
 lspconfig.volar.setup{}
 lspconfig.angularls.setup{}
 lspconfig.marksman.setup{}
+lspconfig.rust_analyzer.setup{}
 
 -- 
 -- lspconfig.pyright.setup { blabla}
